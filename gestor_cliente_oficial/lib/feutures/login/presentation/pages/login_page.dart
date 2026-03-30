@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gestor_cliente_oficial/feutures/login/presentation/widgets/LoginsMobile_widget.dart';
 import 'package:gestor_cliente_oficial/feutures/login/presentation/widgets/logins_widget_page.dart';
 
 class LoginPage extends StatefulWidget {

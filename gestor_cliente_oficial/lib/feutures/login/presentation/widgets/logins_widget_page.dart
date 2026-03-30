@@ -71,14 +71,3 @@ class LoginPageWeb extends StatelessWidget {
     );
   }
 }
-
-//Mobile
-
-class LoginPageMobile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: const Center(child: Text('Gestor de Clientes Mobile')),
-    );
-  }
-}
