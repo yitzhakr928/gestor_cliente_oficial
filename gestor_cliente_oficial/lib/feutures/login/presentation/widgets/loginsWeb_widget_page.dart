@@ -13,34 +13,41 @@ class LoginPageWeb extends StatelessWidget {
         children: [
           Expanded(
             flex: 7,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                FlutterLogo(size: 50),
-                SizedBox(height: 20),
-                Text(
-                  'Bienvenido!',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w100,
-                    fontFamily: 'Roboto',
-                  ),
-                ),
-                SizedBox(height: 30),
-                //formulario de login
-                fomularioLogin(),
-                SizedBox(height: 20),
-                Row(
+            child: Center(
+              child: SingleChildScrollView(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('¿No tienes una cuenta?'),
-                    TextButton(onPressed: () {}, child: Text('Registrate')),
+                    FlutterLogo(size: 50),
+                    SizedBox(height: 20),
+                    Text(
+                      'Bienvenido!',
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w100,
+                        fontFamily: 'Roboto',
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    //formulario de login
+                    fomularioLogin(),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('¿No tienes una cuenta?'),
+                        TextButton(onPressed: () {}, child: Text('Registrate')),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    //boton de iniciar sesion
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Iniciar Sesión'),
+                    ),
                   ],
                 ),
-                SizedBox(height: 20),
-                //boton de iniciar sesion
-                ElevatedButton(onPressed: () {}, child: Text('Iniciar Sesión')),
-              ],
+              ),
             ),
           ),
           Expanded(
